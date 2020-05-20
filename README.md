@@ -8,7 +8,7 @@
 
 This project is for educational porpuses only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
 
-Site published at https://front-end-by-rimantas.github.io/15-grupe-portoflio-potato/
+Site published at https://front-end-by-rimantas.github.io/15-grupe-portfolio-potato/
 
 Design: [Potato (Potato) template](https://www.themetrading.net/html/potato/design-1/index.html#services)
 
