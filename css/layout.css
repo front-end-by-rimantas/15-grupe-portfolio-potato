@@ -149,6 +149,9 @@
         width: 768px;
         margin: 5px calc(50% - 384px);
     }
+        .controls .control {
+            margin: 0 5px 5px 0 !important;
+        }
     
     .container > .row > .col-md-12 { width: var(--w-12); }
     .container > .row > .col-md-11 { width: var(--w-11); }
@@ -185,9 +188,6 @@
     font-size: 26px !important;
     line-height: 36px;
     }
-    .controls .control {
-        margin: 0 5px 5px 0 !important;
-    }
 }
 
 
@@ -199,6 +199,10 @@
         width: 480px;
         margin: 5px calc(50% - 240px);
     }
+    .controls>.control {
+        height: 38px !important;
+    }
+
     .container > .row > .col-sm-12 { width: var(--w-12); }
     .container > .row > .col-sm-11 { width: var(--w-11); }
     .container > .row > .col-sm-10 { width: var(--w-10); }
