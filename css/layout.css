@@ -149,6 +149,7 @@
         width: 768px;
         margin: 5px calc(50% - 384px);
     }
+    
     .container > .row > .col-md-12 { width: var(--w-12); }
     .container > .row > .col-md-11 { width: var(--w-11); }
     .container > .row > .col-md-10 { width: var(--w-10); }
@@ -174,6 +175,19 @@
     .container > .row > .m-l-md-10 { margin-left: var(--ml-10); }
     .container > .row > .m-l-md-11 { margin-left: var(--ml-11); }
 }
+
+@media (max-width: 991.98px) {
+    h5{
+    font-size: 16px !important;
+    line-height: 26px;
+    }
+    h2{
+    font-size: 26px !important;
+    line-height: 36px;
+    }
+}
+
+
 @media (max-width: 860px) {
     :root {
         --gap: 10px;
