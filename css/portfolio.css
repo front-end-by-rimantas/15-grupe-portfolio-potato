@@ -1,42 +1,63 @@
-.portfolio{
+/*-----------HEADER--------------------*/
+
+.portfolio {
     background-color: #f8f8f8;
 }
 
-    .portfolio-title{
-        text-align: center;
-        padding-bottom: 30px;
+.portfolio-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.portfolio-title>h5 {
+    display: table;
+    margin: auto;
+    padding: 0 50px;
+    position: relative;
+    letter-spacing: 1px;
+    color: #00c07c;
+}
+
+.portfolio-title>h5::before,
+.portfolio-title>h5::after {
+    display: inline-block;
+    position: absolute;
+    background-color: #00C07C;
+    content: '';
+    width: 25px;
+    height: 2px;
+    top: 50%;
+}
+
+h5::before {
+    left: 0;
+}
+
+h5::after {
+    right: 0;
+}
+
+
+/* ---------BUTTONS------------------------ */
+
+.controls {
+text-align: center;
+}
+
+    .controls>.control {
+        margin: 0 5px 0 0;
+        padding: 7px 30px;
+        cursor: pointer;
+        border-radius: 50px;
+        letter-spacing: 1px;
+        border: 2px solid;
+        border-color: #00C07C;
+        color: #fff;
+        background-color: #00C07C;
+        font-family: 'Montserrat', sans-serif;
     }
-        .portfolio-title>h5{
-            display: table;
-            margin: auto;
-            padding: 0 50px;
-            font-family: 'Montserrat', sans-serif;
-            position: relative;
-            letter-spacing: 1px;
-            color: #00c07c;
-        }
 
-            .portfolio-title>h5::before,
-            .portfolio-title>h5::after{
-                display: inline-block;
-                position: absolute;
-                background-color: #00C07C;
-                content: '';
-                width: 25px;
-                height: 2px;
-                top: 50%;
-            }
-                h5::before{
-                    left: 0;
-                }
-                h5::after {
-                    right: 0;
-                }
-
-        .portfolio-title>h2{
-            font-family: 'Montserrat', sans-serif;
-            color: #151515;
-            line-height: 44px;
-            font-size: 32px;
-            font-weight: 900;
-        }
+    .controls>.mixAll{
+        color: #00C07C;
+        background-color: transparent;
+    }

@@ -185,6 +185,9 @@
     font-size: 26px !important;
     line-height: 36px;
     }
+    .controls .control {
+        margin: 0 5px 5px 0 !important;
+    }
 }
 
 
