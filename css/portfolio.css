@@ -1,0 +1,135 @@
+/*-----------HEADER--------------------*/
+
+.portfolio {
+    background-color: #f8f8f8;
+}
+
+.portfolio-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.portfolio-title>h5 {
+    display: table;
+    margin: auto;
+    padding: 0 50px;
+    position: relative;
+    letter-spacing: 1px;
+    color: #00c07c;
+}
+
+.portfolio-title>h5::before,
+.portfolio-title>h5::after {
+    display: inline-block;
+    position: absolute;
+    background-color: #00C07C;
+    content: '';
+    width: 25px;
+    height: 2px;
+    top: 50%;
+}
+
+h5::before {
+    left: 0;
+}
+
+h5::after {
+    right: 0;
+}
+
+
+/* ---------BUTTONS------------------------ */
+
+.controls {
+text-align: center;
+}
+
+    .controls>.control {
+        height: 46px;
+        margin: 0 5px 0 0;
+        padding: 7px 30px;
+        cursor: pointer;
+        border-radius: 50px;
+        letter-spacing: 1px;
+        border: 2px solid;
+        border-color: #00C07C;
+        color: #fff;
+        background-color: #00C07C;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+    }
+
+    .controls>.mixAll{
+        color: #00C07C;
+        background-color: transparent;
+    }
+
+
+/* --------------IMAGE GALERY------------- */
+
+.project {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-gallery>.row{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        padding: 40px 0;
+        cursor: pointer;
+}
+        .responsiveImg {
+              max-width: 100%;
+              height: auto;
+              margin-top: 5px;
+        }
+        
+        figcaption>h5{
+            display: grid;
+            grid-template-columns: 70%;
+            justify-content:space-evenly;
+            word-break: keep-all;
+        }
+        .project>figure{
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .project>figcaption {
+            bottom: 0;
+            left: 0;
+            margin: 40px 50px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+        .project-title {
+            position: absolute;
+            top: 5%;
+            left: 0;
+            text-align: start;
+            margin: 0;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            line-height: 28px;
+            color:#fff ;
+        }
+
+        .project-category {
+            position: absolute;
+            left: 10%;
+            bottom: 10%;
+            letter-spacing: 7px;
+            transform: rotate(-90deg);
+            transform-origin: 0 0 0;
+            color: #fff;
+        }
