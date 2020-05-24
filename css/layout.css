@@ -83,6 +83,10 @@
         width: 1200px;
         margin: 5px calc(50% - 600px);
     }
+    .image-gallery>.row {
+        grid-template-columns: 24% 24% 24% 24% !important;
+    }
+
     .container > .row > .col-xl-12 { width: var(--w-12); }
     .container > .row > .col-xl-11 { width: var(--w-11); }
     .container > .row > .col-xl-10 { width: var(--w-10); }
@@ -116,6 +120,13 @@
         width: 980px;
         margin: 5px calc(50% - 490px);
     }
+    .image-gallery>.row {
+        grid-template-columns: 33% 33% 33% !important;
+    }
+    figcaption>h5 {
+    font-size: 16px;
+    }
+
     .container > .row > .col-lg-12 { width: var(--w-12); }
     .container > .row > .col-lg-11 { width: var(--w-11); }
     .container > .row > .col-lg-10 { width: var(--w-10); }
@@ -152,6 +163,10 @@
         .controls .control {
             margin: 0 5px 5px 0 !important;
         }
+        .image-gallery>.row {
+            grid-template-columns: 33% 33% 33% !important;
+        }
+
     
     .container > .row > .col-md-12 { width: var(--w-12); }
     .container > .row > .col-md-11 { width: var(--w-11); }
@@ -188,6 +203,12 @@
     font-size: 26px !important;
     line-height: 36px;
     }
+      .image-gallery>.row {
+          grid-template-columns: 50% 50% !important;
+      }
+    .project>figure>figcaption>h5 {
+    font-size: 18px !important;
+    }
 }
 
 
@@ -202,6 +223,12 @@
     .controls>.control {
         height: 38px !important;
     }
+    .image-gallery>.row {
+        grid-template-columns: 49% 49% !important;
+    }
+     .project>figure>figcaption>h5 {
+         font-size: 16px !important;
+     }
 
     .container > .row > .col-sm-12 { width: var(--w-12); }
     .container > .row > .col-sm-11 { width: var(--w-11); }
@@ -233,6 +260,13 @@
         width: 100%;
         margin: 0;
     }
+    .image-gallery>.row{
+        grid-template-columns: 70% !important;
+    }
+    .project>figure>figcaption>h5 {
+        font-size: 18px !important;
+    }
+
     .container > .row > .col-xs-12 { width: var(--w-12); }
     .container > .row > .col-xs-11 { width: var(--w-11); }
     .container > .row > .col-xs-10 { width: var(--w-10); }
@@ -257,6 +291,12 @@
     .container > .row > .m-l-xs-9 { margin-left: var(--ml-9); }
     .container > .row > .m-l-xs-10 { margin-left: var(--ml-10); }
     .container > .row > .m-l-xs-11 { margin-left: var(--ml-11); }
+}
+
+@media (max-width: 400px){
+    .project>figure>figcaption>h5 {
+        font-size: 14px !important;
+    }
 }
 
 
