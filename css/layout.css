@@ -1,6 +1,7 @@
 :root {
     --gap: 40px;
-    --w-1: calc((100% - 12 * var(--gap)) / 12);
+
+    --w-1: calc( (100% - 12 * var(--gap)) / 12 );
     --w-2: calc( var(--w-1) + var(--gap) + var(--w-1) );
     --w-3: calc( var(--w-2) + var(--gap) + var(--w-1) );
     --w-4: calc( var(--w-3) + var(--gap) + var(--w-1) );
@@ -13,17 +14,17 @@
     --w-11: calc( var(--w-10) + var(--gap) + var(--w-1) );
     --w-12: calc( var(--w-11) + var(--gap) + var(--w-1) );
 
-     --ml-1: calc(var(--w-1) + 1.5 * var(--gap));
-     --ml-2: calc(var(--w-2) + 1.5 * var(--gap));
-     --ml-3: calc(var(--w-3) + 1.5 * var(--gap));
-     --ml-4: calc(var(--w-4) + 1.5 * var(--gap));
-     --ml-5: calc(var(--w-5) + 1.5 * var(--gap));
-     --ml-6: calc(var(--w-6) + 1.5 * var(--gap));
-     --ml-7: calc(var(--w-7) + 1.5 * var(--gap));
-     --ml-8: calc(var(--w-8) + 1.5 * var(--gap));
-     --ml-9: calc(var(--w-9) + 1.5 * var(--gap));
-     --ml-10: calc(var(--w-10) + 1.5 * var(--gap));
-     --ml-11: calc(var(--w-11) + 1.5 * var(--gap));
+    --ml-1: calc( var(--w-1) + 1.5 * var(--gap) );
+    --ml-2: calc( var(--w-2) + 1.5 * var(--gap) );
+    --ml-3: calc( var(--w-3) + 1.5 * var(--gap) );
+    --ml-4: calc( var(--w-4) + 1.5 * var(--gap) );
+    --ml-5: calc( var(--w-5) + 1.5 * var(--gap) );
+    --ml-6: calc( var(--w-6) + 1.5 * var(--gap) );
+    --ml-7: calc( var(--w-7) + 1.5 * var(--gap) );
+    --ml-8: calc( var(--w-8) + 1.5 * var(--gap) );
+    --ml-9: calc( var(--w-9) + 1.5 * var(--gap) );
+    --ml-10: calc( var(--w-10) + 1.5 * var(--gap) );
+    --ml-11: calc( var(--w-11) + 1.5 * var(--gap) );
 }
 
 .container {
@@ -50,7 +51,7 @@
         .container > .row > .col-1 {
             display: inline-block;
             float: left;
-            margin: 0 calc(var(--gap) / 2);
+            margin: 0 calc( var(--gap) / 2 );
         }
         
         .container > .row > .col-12 { width: var(--w-12); }
@@ -83,6 +84,10 @@
         width: 1200px;
         margin: 5px calc(50% - 600px);
     }
+    .image-gallery>.row {
+        grid-template-columns: 24% 24% 24% 24% !important;
+    }
+
     .container > .row > .col-xl-12 { width: var(--w-12); }
     .container > .row > .col-xl-11 { width: var(--w-11); }
     .container > .row > .col-xl-10 { width: var(--w-10); }
@@ -116,6 +121,13 @@
         width: 980px;
         margin: 5px calc(50% - 490px);
     }
+    .image-gallery>.row {
+        grid-template-columns: 33% 33% 33% !important;
+    }
+    figcaption>h5 {
+    font-size: 16px;
+    }
+
     .container > .row > .col-lg-12 { width: var(--w-12); }
     .container > .row > .col-lg-11 { width: var(--w-11); }
     .container > .row > .col-lg-10 { width: var(--w-10); }
@@ -149,6 +161,14 @@
         width: 768px;
         margin: 5px calc(50% - 384px);
     }
+        .controls .control {
+            margin: 0 5px 5px 0 !important;
+        }
+        .image-gallery>.row {
+            grid-template-columns: 33% 33% 33% !important;
+        }
+
+    
     .container > .row > .col-md-12 { width: var(--w-12); }
     .container > .row > .col-md-11 { width: var(--w-11); }
     .container > .row > .col-md-10 { width: var(--w-10); }
@@ -174,6 +194,25 @@
     .container > .row > .m-l-md-10 { margin-left: var(--ml-10); }
     .container > .row > .m-l-md-11 { margin-left: var(--ml-11); }
 }
+
+@media (max-width: 991.98px) {
+    h5{
+    font-size: 16px !important;
+    line-height: 26px;
+    }
+    h2{
+    font-size: 26px !important;
+    line-height: 36px;
+    }
+      .image-gallery>.row {
+          grid-template-columns: 50% 50% !important;
+      }
+    .project>figure>figcaption>h5 {
+    font-size: 18px !important;
+    }
+}
+
+
 @media (max-width: 860px) {
     :root {
         --gap: 10px;
@@ -182,6 +221,16 @@
         width: 480px;
         margin: 5px calc(50% - 240px);
     }
+    .controls>.control {
+        height: 38px !important;
+    }
+    .image-gallery>.row {
+        grid-template-columns: 49% 49% !important;
+    }
+     .project>figure>figcaption>h5 {
+         font-size: 16px !important;
+     }
+
     .container > .row > .col-sm-12 { width: var(--w-12); }
     .container > .row > .col-sm-11 { width: var(--w-11); }
     .container > .row > .col-sm-10 { width: var(--w-10); }
@@ -212,6 +261,13 @@
         width: 100%;
         margin: 0;
     }
+    .image-gallery>.row{
+        grid-template-columns: 70% !important;
+    }
+    .project>figure>figcaption>h5 {
+        font-size: 18px !important;
+    }
+
     .container > .row > .col-xs-12 { width: var(--w-12); }
     .container > .row > .col-xs-11 { width: var(--w-11); }
     .container > .row > .col-xs-10 { width: var(--w-10); }
@@ -236,6 +292,12 @@
     .container > .row > .m-l-xs-9 { margin-left: var(--ml-9); }
     .container > .row > .m-l-xs-10 { margin-left: var(--ml-10); }
     .container > .row > .m-l-xs-11 { margin-left: var(--ml-11); }
+}
+
+@media (max-width: 400px){
+    .project>figure>figcaption>h5 {
+        font-size: 14px !important;
+    }
 }
 
 
