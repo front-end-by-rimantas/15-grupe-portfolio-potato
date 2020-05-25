@@ -1,6 +1,212 @@
+/*
+* Footer Css Clases
+*
+*/
 footer {
-    background-image:linear-gradient(#24eda7,#2dd0e2) ;
+    background-image:linear-gradient(90deg,#2dd0e2,#24eda7);
     text-align: center;
-    padding: 15px;
-    font-size: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
 }
+/*
+* Contacts form Css Clases
+*
+*/
+.container > .row > p > span {
+    color: #fff;
+}
+
+
+.contact {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.image-frame {
+    box-sizing: border-box;
+    
+}
+    .image-frame > img {
+        width: 100%;
+    }
+
+.contactHeading {
+    color: #00C07C;
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.secondHeading {
+    color: black;
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+form {
+    width: 100%;
+}
+.input-place  {
+    width: 100%;
+    font-size: 16px;
+    line-height: 44px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border: none;
+    color: #495057;
+    border: solid 0.5px #ccc;
+}
+.input-place:focus  {
+    color: #495057;
+    outline: solid 0.5px #ccc;
+}
+
+
+.input-place.tarea {
+    overflow: auto;
+    resize: vertical;
+    height:140px ;
+}
+.btn{
+    width: 30%;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color:#00C07C;
+    color: #fff;
+    border-color: #00C07C; 
+    font-size: 26px;
+}
+.btn:hover{
+    background-color: #fff;
+    color:  #00C07C;
+}
+
+
+.info-block,
+h4.info-block {
+    color: #00C07C;
+    font-size: 20px;
+    letter-spacing: 1px; 
+}
+.info-block-txt {
+    color: #495057;
+    font-size: 18px;
+    letter-spacing: 1px; 
+}
+
+.soc > a{
+    color: #fff;
+    background-color: #00C07C;
+    border:solid 0.5px #00C07C;
+    border-radius: 28px;
+    font-size: 18px;
+    line-height: 40px;
+    padding-bottom: 2px;
+    letter-spacing: 2px;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+}
+
+.soc > a:hover{
+    background-color: #fff;
+    color:  #00C07C;
+}
+.by-60  {
+    padding: 60px;
+}
+.center {
+    text-align: center;
+}
+
+/* 
+*   Blog Section Css Classes
+*   
+*/
+
+.blog {
+    width: 80%;
+    font-size: 16px;
+}
+
+.blog-box {
+    width: 100%;
+    margin: 15px 15px;
+}  
+
+.blog.title {
+    letter-spacing: 1px; 
+    font-style: italic;
+    color: #00C07C;
+}
+.bg-blog {
+    box-shadow: 1px 2px 3px rgba(0,0,0,.10);
+    border: none;
+    border-bottom: solid #00C07C;
+}
+.blog.content {
+    font-size: 18px;
+    color: black;
+    margin: 20px 0;
+    text-decoration: none;
+}
+.blog.content:hover {
+    color:#00C07C;
+    cursor: pointer;
+    text-decoration: none;
+}
+.blog-date{
+    width: 100%;
+}
+.dataline {
+    width: 80%;
+    height: 20px;
+    padding: 15px;
+    color: #00C07C ;
+}
+
+.left-data {
+    width: auto;
+    float: left;
+    margin: auto;
+}
+.right-data {
+    width: auto;
+    float: right;
+    margin: auto;
+}
+.m-auto {
+    margin: auto;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: table;
+}
+
+/* .line {
+    text-decoration: none;
+   
+ } */
+ .line:before{
+     left: 0;
+ }
+ .line:after{
+     right: 0;
+ }
+ .line:before, .line:after {
+     content: '';
+     width: 25px;
+     height: 2px;
+     top: 10%;
+     background-color: #00C07C;
+     box-sizing: border-box;
+     position: absolute;
+ }
+
+
+
