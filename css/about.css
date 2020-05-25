@@ -1,0 +1,122 @@
+.about {
+    display: inline-block;
+    width: 100%;
+}
+    .about > .row {
+        display: inline-block;
+        width:auto;
+        height: 0 calc(50% - 700px);
+    }
+    .about-img {
+        display: inline-block;
+        width: 100%;
+        padding: 0 40px 30px 0;
+        object-fit: scale-down;
+    }
+    .about-colm {
+        display: inline-block;
+        width: 100%;
+        height: 774px;
+    }
+        .about-details {
+            display: inline-block;
+            width: 100%;
+        }
+            .about-details > .p1-about {
+                font-family: 'Montserrat';
+                font-size: 15px;
+                text-align: justify;
+                color: gray;
+                line-height: 30px;
+                letter-spacing: 0;
+                word-spacing: 1px;
+
+            }
+            .about-details > .p2-about {
+                font-family: 'Montserrat';
+                font-size: 15px;
+                text-align:justify;
+                color: gray;
+                line-height: 35px;
+                line-height: 30px;
+                letter-spacing: 0;
+                word-spacing: 1px;
+
+            }
+            .title-sect {
+                margin-bottom: 40px;
+            }
+            .title-sect > .h3-about {
+                display: inline-block;
+                width: 100%;
+                color: #00C07C;
+                font-size: 28px;
+                
+            }
+            .title-sect > .h2-about {
+                display: inline-block;
+                width: 100%;
+                color: black;
+                font-size: 35px;
+                padding: 15px 0;
+                margin-top: 2px;
+            }
+            .about-cont {
+                margin-top: 20px;
+            }
+            .about-cont > .info {
+                font-family: 'Montserrat';
+                padding: 10px 0;
+                font-size: 15px;
+                color: gray;
+                border-bottom: 1px solid #F0F0F0;
+            }
+            .about-cont > .info > span {
+                font-family: 'Montserrat';
+                padding: 0 30px 0 0;
+                color: #151515;
+                text-align: center;
+            }
+            .about-btns {
+                font-size: 20px;
+                margin-top: 25px;
+            }
+            .btn-download{
+                display: inline-block;
+                width: auto;
+                color: #fff;
+                background-color: #00C07C;
+                margin: 5px;
+                border-radius:  30px;
+                text-decoration: none;
+                text-align: center;
+                cursor: pointer;
+                padding: 10px 40px;
+            }
+                .btn-download:hover{
+                    background-color: #fff;
+                    color: #00C07C;
+                    transition: all 0.8s;
+                    border: 1px solid #00C07C;
+                }
+            .btn-message{
+                display: inline-block;
+                width: auto%;
+                color: #fff;
+                background-color: #00C07C;
+                margin: 5px 10px;
+                border-radius:  30px;
+                text-decoration: none;
+                text-align: center;
+                cursor: pointer;
+                padding: 10px 40px;
+                
+            }
+                .btn-message:hover{
+                    background-color: #fff;
+                    color: #00C07C;
+                    transition: all 0.8s;
+                    border: 1px solid #00C07C;
+                }
+
+            
