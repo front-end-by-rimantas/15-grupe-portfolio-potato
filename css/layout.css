@@ -232,20 +232,22 @@
 }
 
 @media (max-width: 991.98px) {
-    h5{
+    .portfolio-title>h5 {
     font-size: 16px !important;
-    line-height: 26px;
+    line-height: 26px !important;
     }
-    h2{
+    .portfolio-title>h2 {
     font-size: 26px !important;
-    line-height: 36px;
+    line-height: 36px !important;
     }
       .image-gallery>.row {
           grid-template-columns: 49% 49% !important;
       }
-    .project>figure>figcaption>h5 {
-    font-size: 18px !important;
+
+    .project-title,.project-category {
+    font-size: 20px !important;
     }
+
      .zoom-icon {
          width: 120px !important;
          height: 120px !important;
@@ -275,7 +277,8 @@
     .image-gallery>.row {
         grid-template-columns: 49% 49% !important;
     }
-     .project>figure>figcaption>h5 {
+     .project-title,
+     .project-category {
          font-size: 16px !important;
      }
 
@@ -325,7 +328,8 @@
     .image-gallery>.row{
         grid-template-columns: 70% !important;
     }
-    .project>figure>figcaption>h5,h6 {
+    .project-title,
+    .project-category {
         font-size: 18px !important;
     }
          .zoom-icon {
@@ -369,7 +373,8 @@
 }
 
 @media (max-width: 400px){
-    .project>figure>figcaption>h5,h6 {
+   .project-title,
+   .project-category {
         font-size: 14px !important;
     }
 

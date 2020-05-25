@@ -7,6 +7,7 @@
 .portfolio-title {
     text-align: center;
     padding-bottom: 30px;
+    word-break: keep-all;
 }
 
 .portfolio-title>h5 {
