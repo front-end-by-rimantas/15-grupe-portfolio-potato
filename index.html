@@ -7,32 +7,35 @@
     <title>Potato - Personal Portfolio</title>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon?">
     <link rel="stylesheet" href="./css/reset.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/footer.css">
-=======
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
->>>>>>> fad53e16994a68e13aa26b12c81028c5bee4e933
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/portfolio.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/choose.css">    
-    <link rel="stylesheet" href="./css/about.css">    
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/hero.css">    
+
 </head>
 
 <body>
     <header class="container">
         <div class="row">
             <!-- Viktoro nav bar -->
-        </div>
-    </header>
-    <div class="container hero">
-        <div class="row">
-            <!-- Viktoro hero area sekcija -->
+         </div>
+        </header>
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 container main-hero">
+        <div class="row hero ">
+            <div class=" hero-texts">
+                <h4>Welcome To My Site</h4>
+                <h1>Hello! I'm Jackson Smith,
+                    <br>
+                    An UI/UX Designer.</h1>
+                <p>Condimentum ornare Nam senectus eu vitae lorem volutpat potenti orci lectus odio senectus habitasse eros phasellus. Sociis dapibus ultrices.</p>
+                <a class="btn-hero" href="#">Download CV</a>
+            </div>
         </div>
     </div>
     <div class="container about">
@@ -143,124 +146,141 @@
             </div>
             <div class="col-md-12 col-lg-12">
                 <div class="controls">
-                    <button type="button" class="control mixAll">All</button>
-                    <button type="button" class="control">Design</button>
-                    <button type="button" class="control">Photography</button>
-                    <button type="button" class="control">Development</button>
-                    <button type="button" class="control">Mockup</button>
+                    <button class="control active" onclick="imgFilter('all')">All</button>
+                    <button class="control" onclick="imgFilter('design')">Design</button>
+                    <button class="control" onclick="imgFilter('photography')">Photography</button>
+                    <button class="control" onclick="imgFilter('development')">Development</button>
+                    <button class="control" onclick="imgFilter('mockup')">Mockup</button>
                 </div>
             </div>
-            <div class="image-gallery col-md-12 col-lg-12">
+            <div class="image-gallery">
                 <div class="row">
-                    <div class="photo-column col-xl-3 col-lg-3 ">
+                    <div class="photoColumn design development">
                         <div class="row">
                             <div class="project">
-                                <figure>
-                                    <img src="./img/Portfolio/1.jpg" alt="image" class="responsiveImg">
-                                    <figcaption>
-                                        <h5 class="project-title">Amazing mockup design for clients</h5>
-                                        <h6 class="project-category">Portfolio</h6>
-                                        <div class="zoom-icon"></div>
-                                    </figcaption>
-                                </figure>
+                                <div class="darkOverlay">
+                                    <figure>
+                                        <img src="./img/Portfolio/1.jpg" alt="image" class="responsiveImg">
+                                        <figcaption>
+                                            <h5 class="project-title">Amazing mockup design for clients</h5>
+                                            <h6 class="project-category">Portfolio</h6>
+                                            <div class="zoom-icon">
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="photo-column col-xl-3 col-lg-3 ">
+                    <div class="photoColumn development mockup">
                         <div class="row">
                             <div class="project">
-                                <figure>
-                                    <img src="./img/Portfolio/2.jpg" alt="image" class="responsiveImg">
-                                    <figcaption>
-                                        <h5 class="project-title">This is awesome photography</h5>
-                                        <h6 class="project-category">Portfolio</h6>
-                                        <div class="zoom-icon"></div>
-                                    </figcaption>
-                                </figure>
+                                <div class="darkOverlay">
+                                    <figure>
+                                        <img src="./img/Portfolio/2.jpg" alt="image" class="responsiveImg">
+                                        <figcaption>
+                                            <h5 class="project-title">This is awesome photography</h5>
+                                            <h6 class="project-category">Portfolio</h6>
+                                            <div class="zoom-icon"></div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="photo-column col-xl-3 col-lg-3 ">
+                    <div class="photoColumn design photography mockup">
                         <div class="row">
                             <div class="project">
-                                <figure>
-                                    <img src="./img/Portfolio/3.jpg" alt="image" class="responsiveImg">
-                                    <figcaption>
-                                        <h5 class="project-title">Creative design for clients</h5>
-                                        <h6 class="project-category">Portfolio</h6>
-                                        <div class="zoom-icon"></div>
-                                    </figcaption>
-                                </figure>
+                                <div class="darkOverlay">
+                                    <figure>
+                                        <img src="./img/Portfolio/3.jpg" alt="image" class="responsiveImg">
+                                        <figcaption>
+                                            <h5 class="project-title">Creative design for clients</h5>
+                                            <h6 class="project-category">Portfolio</h6>
+                                            <div class="zoom-icon"></div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="photo-column col-xl-3 col-lg-3 ">
+                    <div class="photoColumn design development">
                         <div class="row">
                             <div class="project">
-                                <figure>
-                                    <img src="./img/Portfolio/4.jpg" alt="image" class="responsiveImg">
-                                    <figcaption>
-                                        <h5 class="project-title">WP Development for my clients</h5>
-                                        <h6 class="project-category">Portfolio</h6>
-                                        <div class="zoom-icon"></div>
-                                    </figcaption>
-                                </figure>
+                                <div class="darkOverlay">
+                                    <figure>
+                                        <img src="./img/Portfolio/4.jpg" alt="image" class="responsiveImg">
+                                        <figcaption>
+                                            <h5 class="project-title">WP Development for my clients</h5>
+                                            <h6 class="project-category">Portfolio</h6>
+                                            <div class="zoom-icon"></div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="photo-column col-xl-3 col-lg-3 ">
+                    <div class="photoColumn photography development mockup">
                         <div class="row">
                             <div class="project">
-                                <figure>
-                                    <img src="./img/Portfolio/5.jpg" alt="image" class="responsiveImg">
-                                    <figcaption>
-                                        <h5 class="project-title">PHP development for my clients</h5>
-                                        <h6 class="project-category">Portfolio</h6>
-                                        <div class="zoom-icon"></div>
-                                    </figcaption>
-                                </figure>
+                                <div class="darkOverlay">
+                                    <figure>
+                                        <img src="./img/Portfolio/5.jpg" alt="image" class="responsiveImg">
+                                        <figcaption>
+                                            <h5 class="project-title">PHP development for my clients</h5>
+                                            <h6 class="project-category">Portfolio</h6>
+                                            <div class="zoom-icon"></div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="photo-column col-xl-3 col-lg-3 ">
+                    <div class="photoColumn photography">
                         <div class="row">
                             <div class="project">
-                                <figure>
-                                    <img src="./img/Portfolio/6.jpg" alt="image" class="responsiveImg">
-                                    <figcaption>
-                                        <h5 class="project-title">Extraordinary image caption</h5>
-                                        <h6 class="project-category">Portfolio</h6>
-                                        <div class="zoom-icon"></div>
-                                    </figcaption>
-                                </figure>
+                                <div class="darkOverlay">
+                                    <figure>
+                                        <img src="./img/Portfolio/6.jpg" alt="image" class="responsiveImg">
+                                        <figcaption>
+                                            <h5 class="project-title">Extraordinary image caption</h5>
+                                            <h6 class="project-category">Portfolio</h6>
+                                            <div class="zoom-icon"></div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="photo-column col-xl-3 col-lg-3 ">
+                    <div class="photoColumn design mockup">
                         <div class="row">
                             <div class="project">
-                                <figure>
-                                    <img src="./img/Portfolio/7.jpg" alt="image" class="responsiveImg">
-                                    <figcaption>
-                                        <h5 class="project-title">Unique showcase design</h5>
-                                        <h6 class="project-category">Portfolio</h6>
-                                        <div class="zoom-icon"></div>
-                                    </figcaption>
-                                </figure>
+                                <div class="darkOverlay">
+                                    <figure>
+                                        <img src="./img/Portfolio/7.jpg" alt="image" class="responsiveImg">
+                                        <figcaption>
+                                            <h5 class="project-title">Unique showcase design</h5>
+                                            <h6 class="project-category">Portfolio</h6>
+                                            <div class="zoom-icon"></div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="photo-column col-xl-3 col-lg-3 ">
+                    <div class="photoColumn photography">
                         <div class="row">
                             <div class="project">
-                                <figure>
-                                    <img src="./img/Portfolio/8.jpg" alt="image" class="responsiveImg">
-                                    <figcaption>
-                                        <h5 class="project-title">Retouch product for buyer</h5>
-                                        <h6 class="project-category">Portfolio</h6>
-                                        <div class="zoom-icon"></div>
-                                    </figcaption>
-                                </figure>
+                                <div class="darkOverlay">
+                                    <figure>
+                                        <img src="./img/Portfolio/8.jpg" alt="image" class="responsiveImg">
+                                        <figcaption>
+                                            <h5 class="project-title">Retouch product for buyer</h5>
+                                            <h6 class="project-category">Portfolio</h6>
+                                            <div class="zoom-icon"></div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -274,7 +294,7 @@
         </div>
     </div>
     <!-- rycio container blog -->
-    
+
     <div class="container by-60">
         <div class="row">
             <div class="col-12">
@@ -288,56 +308,59 @@
             <div class="col-4 col-lg-4 col-md-4 col-sm-12 bg-blog">
                 <div class="image-frame">
                     <img src="./img/blog/1.jpg" alt="">
-                </div>   
+                </div>
                 <div class="blog-box">
                     <p class="blog title"> Design, Development</p>
                     <a href="./blog/blog.html" style="text-decoration: none;">
                         <h5 class="blog content">Urna, ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                    </a>    
-                    <p class="blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestias iusto velit, aliquam error aspernatur!</p>
+                    </a>
+                    <p class="blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestias iusto
+                        velit, aliquam error aspernatur!</p>
                     <div class="dataline">
                         <i class="blog left-data"> 21 August 19</i>
-                        <i class="fa fa-comments right-data">12</i> 
+                        <i class="fa fa-comments right-data">12</i>
                     </div>
-                </div> 
+                </div>
             </div>
             <div class="col-4 col-lg-4 col-md-4 col-sm-12 bg-blog">
                 <div class="image-frame">
                     <img src="./img/blog/2.jpg" alt="">
-                </div>  
+                </div>
                 <div class="blog-box">
                     <p class="blog title"> Development, Seo</p>
                     <a href="./blog/blog.html" style="text-decoration: none;">
                         <h5 class="blog content">Etam, ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                    </a>    
-                    <p class="blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestias iusto velit, aliquam error aspernatur!</p>
+                    </a>
+                    <p class="blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestias iusto
+                        velit, aliquam error aspernatur!</p>
                     <div class="dataline">
                         <i class="blog left-data"> 16 August 19</i>
-                        <i class="fa fa-comments right-data">10</i> 
+                        <i class="fa fa-comments right-data">10</i>
                     </div>
                 </div>
             </div>
             <div class="col-4 col-lg-4 col-md-4 col-sm-12 bg-blog">
                 <div class="image-frame">
                     <img src="./img/blog/3.jpg" alt="">
-                </div>  
+                </div>
                 <div class="blog-box">
                     <p class="blog title"> Design, Seo</p>
                     <a href="./blog/blog.html" style="text-decoration: none;">
                         <h5 class="blog content">Dapidus, ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                    </a>    
-                    <p class="blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestias iusto velit, aliquam error aspernatur!</p>
+                    </a>
+                    <p class="blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestias iusto
+                        velit, aliquam error aspernatur!</p>
                     <div class="dataline">
                         <i class="blog left-data"> 12 August 19</i>
-                        <i class="fa fa-comments right-data">7</i> 
+                        <i class="fa fa-comments right-data">7</i>
                     </div>
-                </div>    
+                </div>
             </div>
         </div>
     </div>
 
     <!-- rycio contact forma -->
-  
+
     <div class="container">
         <div class="row">
             <div class="col-6 col-lg-6 col-md-12">
@@ -346,21 +369,21 @@
                 </div>
             </div>
             <div class="col-6 col-lg-6 col-md-12">
-                    <div class="contactHeading">Contact</div>
-                    <div class="secondHeading">Connect With My Support Center 24/7.</div>
-                    <form >
-                        <div class="row">
-                            <div class="col-12 col-md-12 col-lg-12">
-                                <input class="input-place" type="text" placeholder="  Name*">
-                                <input class="input-place" type="email" placeholder="  Email*">
-                                <input class="input-place" type="text" placeholder="  Subject*">
-                                <textarea class="input-place tarea" placeholder="  Message*"></textarea>
-                            </div>
-                            <div class="col-12 col-md-12 col-lg-12">
-                                <button class="btn">Send</button>
-                            </div>
+                <div class="contactHeading">Contact</div>
+                <div class="secondHeading">Connect With My Support Center 24/7.</div>
+                <form>
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <input class="input-place" type="text" placeholder="  Name*">
+                            <input class="input-place" type="email" placeholder="  Email*">
+                            <input class="input-place" type="text" placeholder="  Subject*">
+                            <textarea class="input-place tarea" placeholder="  Message"></textarea>
                         </div>
-                    </form>
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <button class="btn">Send</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -397,6 +420,7 @@
         </div>
     </footer>
     <script src="./js/data.js"></script>
+    <script src="./js/portfolio.js"></script>
 </body>
 
 </html>
