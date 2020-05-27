@@ -27,10 +27,11 @@ h1 {
     /* display: inline-block;
     box-sizing: border-box; */
 }
-.simplyleft{
-    float: left;
+.linkstyle {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 3px;
 }
-.simplyright{
-    float: right ! important;
-}
+
+
 
