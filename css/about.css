@@ -91,6 +91,7 @@
                 text-decoration: none;
                 text-align: center;
                 cursor: pointer;
+                transition: all 0.8s;
                 padding: 10px 40px;
             }
                 .btn-download:hover{
@@ -101,7 +102,7 @@
                 }
             .btn-message{
                 display: inline-block;
-                width: auto%;
+                width: auto;
                 color: #fff;
                 background-color: #00C07C;
                 margin: 5px 10px;
@@ -109,6 +110,7 @@
                 text-decoration: none;
                 text-align: center;
                 cursor: pointer;
+                transition: all 0.8s;
                 padding: 10px 40px;
                 
             }
