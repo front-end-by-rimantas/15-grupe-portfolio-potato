@@ -61,7 +61,7 @@ h5::after {
     outline: none;
 }
 
-.controls>.mixAll {
+.controls>.active {
     color: #00C07C;
     background-color: transparent;
 }
@@ -104,8 +104,13 @@ figcaption>h5 {
     word-break: keep-all;
 }
 
-.photo-column>.row{
+.photoColumn{
     margin-top: 3px;
+    display: none;
+}
+
+.show{
+    display: block;
 }
 
 .project>figure {
