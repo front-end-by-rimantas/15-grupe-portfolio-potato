@@ -15,10 +15,11 @@ function renderFactCount( selector, data ) {
     for ( let i=0; i<data.length; i++) {
         const skill = data[i];
         HTML += `
-          <div class="col-4 col-md-12 count" data-animated="false">
+          <div class="col-4 col-md-12 count" data-animated="false"
+          data-value="${skill.value}">
             <div class="experience">
              <div class="round">
-                <span class="value">${skill.value}</span>
+                <span class="values">${skill.value}</span>
              </div>
              <div class="exp">${skill.title}</div>
            </div>
