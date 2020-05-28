@@ -1,0 +1,66 @@
+.background-dot {
+    background-image: url(../img/dot.png);
+    
+}
+.fact {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+    
+}
+.count {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 80 !important;
+    margin-right: 0 !important;
+    margin-bottom: 20px !important;
+}
+.round {
+    position: relative!important;
+    margin-right: 10px;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    border-radius: 100%;
+    font-weight: 700;
+    padding: 30px;
+    background-color: #fff!important;
+}
+.experience {
+    text-align: left;
+    padding: 10px;
+    border-radius: 50px;
+    width: 100%!important;
+    display: inline-block!important;
+    background-image: linear-gradient(to right, #22eea7 0%, #2ccfe2 100%) !important;
+}
+.round > .values {
+    color: black;
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    left: 5%;
+    top: 30%;
+    font-size: 16px;
+    width: 90%;
+    text-align: center;
+    float: left;
+    transition: all 3s;
+
+} 
+.experience > .exp {
+    color: #151515;
+    font: 16px !important;
+    position: relative;
+    line-height: 60px;
+    float: left;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    
+}
