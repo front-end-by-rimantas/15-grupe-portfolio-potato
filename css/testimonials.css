@@ -1,0 +1,25 @@
+#testimonialCont{
+    margin-right: 0;
+}
+
+.row.testimonials{
+    margin: 0em;
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    justify-content: space-evenly;
+}
+.testimonials>.videoRight{
+    background-image: url(../img/testimonial.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right;
+}
+
+.testimonials>.textLeft{
+    width: 60%;
+    text-align: left;
+    float: right;
+    background-color: violet;
+}
