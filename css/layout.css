@@ -87,7 +87,22 @@
     .image-gallery>.row {
         grid-template-columns: 24% 24% 24% 24% !important;
     }
+
     
+
+       .zoom-icon {
+           width: 100px !important;
+           height: 100px !important;
+           top: 55% !important;
+           left: 55% !important;
+    }
+
+    .zoom-icon::after {
+        font-size: 30px !important;
+        top: 35% !important;
+        left: 37% !important;
+    }
+
 
     .container > .row > .col-xl-12 { width: var(--w-12); }
     .container > .row > .col-xl-11 { width: var(--w-11); }
@@ -130,6 +145,19 @@
     }
     
 
+    .zoom-icon {
+        width: 120px !important;
+        height: 120px !important;
+        top: 53% !important;
+        left: 53% !important;
+    }
+
+    .zoom-icon::after {
+        font-size: 40px !important;
+        top: 40% !important;
+        left: 35% !important;
+    }
+
     .container > .row > .col-lg-12 { width: var(--w-12); }
     .container > .row > .col-lg-11 { width: var(--w-11); }
     .container > .row > .col-lg-10 { width: var(--w-10); }
@@ -169,7 +197,21 @@
         .image-gallery>.row {
             grid-template-columns: 33% 33% 33% !important;
         }
+
     
+
+    .zoom-icon {
+        width: 80px !important;
+        height: 80px !important;
+        top: 55% !important;
+        left: 63% !important;
+    }
+     .zoom-icon::after {
+        font-size: 20px !important;
+        top: 35% !important;
+        left: 40% !important;
+     }
+
 
     
     .container > .row > .col-md-12 { width: var(--w-12); }
@@ -199,20 +241,34 @@
 }
 
 @media (max-width: 991.98px) {
-    h5{
+    .portfolio-title>h5 {
     font-size: 16px !important;
-    line-height: 26px;
+    line-height: 26px !important;
     }
-    h2{
+    .portfolio-title>h2 {
     font-size: 26px !important;
-    line-height: 36px;
+    line-height: 36px !important;
     }
       .image-gallery>.row {
-          grid-template-columns: 50% 50% !important;
+          grid-template-columns: 49% 49% !important;
       }
-    .project>figure>figcaption>h5 {
-    font-size: 18px !important;
+
+    .project-title,.project-category {
+    font-size: 20px !important;
     }
+
+     .zoom-icon {
+         width: 120px !important;
+         height: 120px !important;
+         top: 50% !important;
+         left: 53% !important;
+     }
+
+     .zoom-icon::after {
+         font-size: 40px !important;
+         top: 40% !important;
+         left: 35% !important;
+     }
 }
 
 
@@ -230,8 +286,22 @@
     .image-gallery>.row {
         grid-template-columns: 49% 49% !important;
     }
-     .project>figure>figcaption>h5 {
+     .project-title,
+     .project-category {
          font-size: 16px !important;
+     }
+
+     .zoom-icon {
+         width: 80px !important;
+         height: 80px !important;
+         top: 60% !important;
+         left: 63% !important;
+     }
+
+     .zoom-icon::after {
+         font-size: 20px !important;
+         top: 35% !important;
+         left: 40% !important;
      }
 
     .container > .row > .col-sm-12 { width: var(--w-12); }
@@ -267,9 +337,23 @@
     .image-gallery>.row{
         grid-template-columns: 70% !important;
     }
-    .project>figure>figcaption>h5 {
+    .project-title,
+    .project-category {
         font-size: 18px !important;
     }
+         .zoom-icon {
+             width: 120px !important;
+             height: 120px !important;
+             top: 50% !important;
+             left: 53% !important;
+         }
+
+         .zoom-icon::after {
+             font-size: 40px !important;
+             top: 40% !important;
+             left: 35% !important;
+         }
+         
 
     .container > .row > .col-xs-12 { width: var(--w-12); }
     .container > .row > .col-xs-11 { width: var(--w-11); }
@@ -298,8 +382,22 @@
 }
 
 @media (max-width: 400px){
-    .project>figure>figcaption>h5 {
+   .project-title,
+   .project-category {
         font-size: 14px !important;
+    }
+
+    .zoom-icon {
+        width: 80px !important;
+        height: 80px !important;
+        top: 55% !important;
+        left: 63% !important;
+    }
+
+    .zoom-icon::after {
+        font-size: 20px !important;
+        top: 35% !important;
+        left: 40% !important;
     }
 }
 
