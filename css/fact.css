@@ -39,7 +39,7 @@
     display: inline-block!important;
     background-image: linear-gradient(to right, #22eea7 0%, #2ccfe2 100%) !important;
 }
-.round > .values {
+.round > .count-num {
     color: black;
     position: absolute;
     font-family: 'Open Sans', sans-serif;
