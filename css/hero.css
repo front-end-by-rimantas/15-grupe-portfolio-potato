@@ -1,14 +1,17 @@
+
 .main-hero {
-background-image: url(./img/banner.png);
+background-image: url(../img/banner.png);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 object-fit: fill;
+
 }
     .hero {
         display: inline-block;
         width:auto;
-        height: 100vh!important;
+        height: 100vh;
+        position: relative;
     }
         .hero-texts{
         margin-top: 200px;
@@ -41,15 +44,12 @@ object-fit: fill;
                 text-align: center;
                 cursor: pointer;
                 padding: 10px 50px;
-                transition: all 0.8s;
-                font-size: 21px;
-
-                
+                font-size: 21px; 
+                transition: all 0.8s; 
             }
-                .btn-hero:hover{
-                    background-color: #fff;
-                    color: #00C07C;
-                    transition: all 0.8s;
-                    border: 2px solid #00C07C;
-                }
+            .btn-hero:hover{
+                background-color: #fff;
+                color: #00C07C;
+                border: 2px solid #00C07C;
+                
             }
