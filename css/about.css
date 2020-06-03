@@ -91,14 +91,15 @@
                 text-decoration: none;
                 text-align: center;
                 cursor: pointer;
-                transition: all 0.8s;
                 padding: 10px 40px;
+                transition: all 0.8s ease 0s;
+                
             }
-                .btn-download:hover{
-                    background-color: #fff;
-                    color: #00C07C;
-                    transition: all 0.8s;
-                    border: 1px solid #00C07C;
+            .btn-download:hover {
+                background-color: #fff;
+                color: #00C07C;
+                border: 1px solid #00C07C;
+                
                 }
             .btn-message{
                 display: inline-block;
@@ -110,15 +111,16 @@
                 text-decoration: none;
                 text-align: center;
                 cursor: pointer;
-                transition: all 0.8s;
                 padding: 10px 40px;
+                transition: all 0.8s ease 0s;
+                
                 
             }
                 .btn-message:hover{
                     background-color: #fff;
                     color: #00C07C;
-                    transition: all 0.8s;
                     border: 1px solid #00C07C;
                 }
+
 
             
