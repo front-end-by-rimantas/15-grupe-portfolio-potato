@@ -1,0 +1,140 @@
+html {
+  scroll-behavior: smooth;  
+}
+header {
+  display: grid;
+  grid-template-rows: minmax(min-content,100px) min-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+  header a {
+  color:black;
+  text-decoration: none;
+  font-family:'Montserrat';
+}
+header .navBar {
+  display: grid;
+  place-items: center;
+  grid-auto-flow: column;
+  align-content: space-evenly;
+}
+  header .navBar img {
+  position: relative;
+  }
+  header .navBar .navLinks {
+  display: grid;
+  gap: 15px;
+  place-items: center;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(min-content, 50px);
+  }
+  .navLinks > a{
+  display: inline-block;
+  float: left;
+  width: 100px;
+  height: auto;
+  text-align: center;
+  line-height: 45px;
+  font-family: 'Montserrat';
+  text-decoration: none;
+  margin-left: 5px;
+  position: relative;
+  }
+  .navLinks >a:first-child::before {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+}
+.navLinks >a:first-child::after {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+  header .navBar .menu{
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    
+  }
+    .menu:hover{
+      filter: opacity(50%);
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+header .hamburgerBar {
+  display: none;
+  background: linear-gradient(90deg,#2dd0e2,#24eda7);
+  text-align: left;
+  padding-left: 15px;
+  width: 100%;
+  border-top: 1px solid #fff;
+  
+}
+  header .hamburgerBar a{
+    padding: 15px;
+  }
+    header .hamburgerBar a:hover{
+      color: #fff;
+      background-color: #24eda7;
+      border-radius: 20px;
+    }
+    .navLinks >a:first-child::before {
+      display: block;
+      content: "";
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      border-top: 2px solid black;
+      border-left: 2px solid black;
+    }
+    .navLinks >a:first-child::after {
+      display: block;
+      content: "";
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      bottom: 2px;
+      right: 2px;
+      border-bottom: 2px solid black;
+      border-right: 2px solid black;
+    }
+
+
+@media (max-width: 1080px) {
+  header .navBar {
+    background:linear-gradient(90deg,#2dd0e2,#24eda7);
+  }
+  header .navBar .menu{
+    display: initial;
+  }
+  header .navBar .navLinks{
+    display: none;
+  }
+  header .navBar img {
+    position: absolute;
+    float: left;
+    top: 25px;
+    left: 20px;
+  }
+  
+}
+

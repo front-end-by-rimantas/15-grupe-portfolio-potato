@@ -16,17 +16,37 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/choose.css">    
     <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/hero.css"> 
     <link rel="stylesheet" href="./css/testimonials.css">   
-
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/fact.css">    
 </head>
 
 <body>
-    <header class="container">
-        <div class="row">
-            <!-- Viktoro nav bar -->
-         </div>
-        </header>
+    <header>
+        <div class="navBar id="popUp">
+            <a href="#"><img src="./img/logo.png"></a>
+            <div class="navLinks">
+                <a href="#popNav">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Portfolio</a>
+                <a href="#testi">Testimonial</a>
+                <a href="#">Blog</a>
+                <a href="#cont">Contact</a>
+            </div>
+            <i class="fa fa-bars fa-2x menu" onclick="menu()"></i>
+        </div>
+        <div class="hamburgerBar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#testi">Testimonial</a>
+            <a href="#">Blog</a>
+            <a href="#cont">Contact</a>
+        </div>
+    </header>
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 container main-hero">
         <div class="row hero ">
             <div class=" hero-texts">
@@ -78,7 +98,7 @@
                         </div>
                         <div>
                             <div class="about-btns">
-                                <a class="btn-download" href="#">Download CV</a>
+                                <a class="btn-download " href="#">Download CV</a>
                                 <a class="btn-message" href="#">Send Message</a>
                             </div>
                         </div>                  
@@ -92,7 +112,7 @@
              <!--Saulius services-->
         </div>
     </div>
-            <!-- Sauliaus why chose me --> 
+            <!-- Sauliaus why chose me Start --> 
         <div class="container">
             <div class="row choose-me">
               <div class="col-12">
@@ -132,14 +152,18 @@
             </div>
         </div>
         <div class="row choose-me">
-            <!-- Sauliaus why chose me -->
         </div>
-        <div class="row achieved">
-            <!-- Sauliaus expierence bars -->
+        <!-- Sauliaus why chose me End -->
+        <!-- Saulius fact-count Start-->
+    <div class="background-dot">
+        <div id="skills" class="container">
+            <div class="row fact">
+                
+            </div>
         </div>
-
-            <!-- Andriaus Testimonials -->
-
+    </div>  
+     <!-- Sauliaus fact-count End -->  
+        
     <div class="container portfolio">
         <div class="row">
             <div class="col-md-12 col-lg-12">
@@ -399,7 +423,12 @@
 
     <!-- rycio contact forma -->
 
+  
+    <div class="container" id="cont">
+
+
     <div class="container">
+
         <div class="row">
             <div class="col-6 col-lg-6 col-md-12">
                 <div class="image-frame">
@@ -457,8 +486,14 @@
             </p>
         </div>
     </footer>
+
+    <script src="./js/nav-bar.js"></script>
     <script src="./js/data.js"></script>
+
+    <script src="./js/fact-home.js" type="module"></script>
     <script src="./js/portfolio.js"></script>
+
+
 </body>
 
 </html>
