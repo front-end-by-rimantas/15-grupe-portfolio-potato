@@ -192,9 +192,7 @@
     .container > .row > .m-l-lg-11 { margin-left: var(--ml-11); }
 }
 @media (max-width: 1080px) {
-    :root {
-        --gap: 20px;
-    }
+
     .container > .row {
         width: 768px;
         margin: 5px calc(50% - 384px);

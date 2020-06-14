@@ -129,6 +129,10 @@ h4.info-block {
 *   
 */
 
+.by-60{
+    background-color: #f8f8f8;
+}
+
 .blog {
     width: 80%;
     font-size: 16px;
@@ -145,6 +149,7 @@ h4.info-block {
     color: #00C07C;
 }
 .bg-blog {
+    background-color: #fff;
     box-shadow: 1px 2px 3px rgba(0,0,0,.10);
     border: none;
     border-bottom: solid #00C07C;
