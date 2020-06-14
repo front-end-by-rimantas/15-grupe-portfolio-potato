@@ -7,12 +7,18 @@ footer {
     text-align: center;
     padding-bottom: 15px;
     padding-top: 15px;
-    font-size: 16px;
-    line-height: 28px;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 400;
     box-sizing: border-box;
 }
+
+footer>.row>p{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-size: 16px;
+    line-height: 28px;
+    color: black;
+    font-weight: 400;
+}
+
+
 /*
 * Contacts form Css Clases
 *
@@ -24,6 +30,7 @@ footer {
 
 #cont{
     padding-top: 0;
+    padding-bottom: 0;
 }
 
 .container > .row > p > span {
