@@ -17,6 +17,15 @@ footer {
 * Contacts form Css Clases
 *
 */
+
+.contactInfo{
+    background-color: #f8f8f8 ;
+}
+
+#cont{
+    padding-top: 0;
+}
+
 .container > .row > p > span {
     color: #fff;
 }
@@ -73,13 +82,15 @@ form {
     height:140px ;
 }
 .btn{
-    width: 30%;
-    border-radius: 25px;
+    width: 25%;
+    border-radius: 30px;
+    border: 2px solid transparent;
     padding: 10px 20px;
     background-color:#00C07C;
     color: #fff;
     border-color: #00C07C; 
-    font-size: 26px;
+    font-size: 22px;
+    cursor: pointer;
 }
 .btn:hover{
     background-color: #fff;

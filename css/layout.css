@@ -166,6 +166,10 @@
         left: -65px !important;
     }
 
+       #containerBtn {
+           width: 30% !important;
+       }
+
     .container > .row > .col-lg-12 { width: var(--w-12); }
     .container > .row > .col-lg-11 { width: var(--w-11); }
     .container > .row > .col-lg-10 { width: var(--w-10); }
@@ -221,6 +225,10 @@
      .btnAnimation>div {
         left: -55px !important;
      }
+
+        #containerBtn {
+            width: 20% !important;
+        }
 
     
     .container > .row > .col-md-12 { width: var(--w-12); }
@@ -286,6 +294,11 @@
      .row.testimonials {
         grid-template-columns: 80% !important;
      }
+
+      #containerBtn {
+          width: 20% !important;
+      }
+
 }
 
 
@@ -321,6 +334,10 @@
          font-size: 20px !important;
          top: 35% !important;
          left: 40% !important;
+     }
+
+     #containerBtn{
+         width: 30% !important;
      }
 
     .container > .row > .col-sm-12 { width: var(--w-12); }
